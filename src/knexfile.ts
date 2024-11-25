@@ -158,4 +158,4 @@ const getKnexConfig = (env: string): KnexType.Config => ({
 export default getKnexConfig(process.env.ENV || "dev");
 
 const connection = Knex(getKnexConfig(process.env.ENV || "dev"));
-export const getKnex = (): Knex => connection;
+export const getKnex = (): KnexType => connection;

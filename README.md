@@ -1,13 +1,12 @@
 # sls-ssm-knex-config-ssm
 
-This repository demonstrates a secure configuration system using AWS Systems Manager (SSM) Parameter Store to manage and dynamically rotate database credentials for a Node.js application configured with Knex.js. It uses a modular architecture to facilitate scalability and maintainability.
+This repository demonstrates a secure configuration system using AWS Systems Manager (SSM) Parameter Store to fetch database credentials for a Node.js application configured with Knex.js. It uses a modular architecture to facilitate scalability and maintainability.
 
 ## Overview
 
 This project integrates AWS SSM Parameter Store with Knex.js, focusing on:
 
 - Securely storing and retrieving database credentials.
-- Dynamically rotating credentials using an `activeUser` flag and timestamp logic.
 - Providing a structured and extendable handler-based architecture for database operations.
 
 ### SSM Parameters
@@ -45,7 +44,6 @@ Example:
 ## Features
 
 - Securely fetch database credentials from SSM Parameter Store.
-- Dynamically update the database connection configuration based on the active user.
 - Provide extendable base handlers for streamlined database interactions.
 
 ## Prerequisites
